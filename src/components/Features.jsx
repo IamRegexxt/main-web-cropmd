@@ -1,8 +1,9 @@
 import React from "react";
-import { Leaf, Map, ClipboardCheck } from "lucide-react"; // professional icons
+import { Leaf, ClipboardCheck, Camera } from "lucide-react"; // professional icons
 import feature1 from "../assets/feature1.png";
 import feature2 from "../assets/feature2.png";
 import feature3 from "../assets/feature3.png";
+import cap from "../assets/cap.png";
 
 export default function Features() {
   const features = [
@@ -13,16 +14,16 @@ export default function Features() {
       desc: "Instantly identify crop diseases with AI-powered image recognition. Farmers simply snap a photo, and CropMD delivers accurate results with actionable insights.",
     },
     {
-      img: feature2,
-      icon: <Map className="w-6 h-6 text-primary" />,
-      title: "Interactive Farm Mapping",
-      desc: "Visualize and monitor crop health directly on a live map. Detect hotspots, track disease spread, and make data-driven farming decisions in real time.",
-    },
-    {
       img: feature3,
       icon: <ClipboardCheck className="w-6 h-6 text-primary" />,
       title: "Personalized Treatment Plans",
       desc: "Get tailored treatment solutions, including organic and chemical options, with step-by-step guidance for sustainable crop protection.",
+    },
+    {
+      img: cap,
+      icon: <Camera className="w-6 h-6 text-primary" />,
+      title: "Image Capture",
+      desc: "Users select a crop (Corn, Rice, or Tomato) and take a photo of a leaf.",
     },
   ];
 

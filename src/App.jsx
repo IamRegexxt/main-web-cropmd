@@ -20,8 +20,8 @@ export default function App() {
     <div className="font-sans">
       <Navbar />
       <Hero />
-      <HowItHelps />
       <Features />
+      <HowItHelps />
       <DiseaseLibrary />
       <FAQ />
       <Footer />
