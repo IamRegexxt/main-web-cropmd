@@ -5,6 +5,18 @@ import phone2 from "../assets/hero1.png";
 import phone3 from "../assets/hero3.jpg";
 
 export default function Hero() {
+  // Smooth scroll handler for the Learn More button
+  const handleLearnMore = (e) => {
+    e.preventDefault();
+    const target = document.getElementById("help");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      // Fallback to hash navigation if element is not found
+      window.location.hash = "#help";
+    }
+  };
+
   return (
     <section className="bg-gradient-to-b from-white to-green-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 flex flex-col md:flex-row items-center gap-16">
@@ -33,7 +45,11 @@ export default function Hero() {
             >
               Download App <ArrowRight className="w-4 h-4" />
             </a>
-            <button className="border border-primary text-primary px-6 py-3 rounded-xl shadow-lg hover:bg-primary hover:text-white transition-all">
+            <button
+              onClick={handleLearnMore}
+              className="border border-primary text-primary px-6 py-3 rounded-xl shadow-lg hover:bg-primary hover:text-white transition-all"
+              aria-label="Learn more about how CropMD helps"
+            >
               Learn More
             </button>
           </div>
