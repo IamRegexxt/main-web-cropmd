@@ -25,7 +25,8 @@ export default function HowItHelps() {
     },
   ];
   return (
-    <section id="help" className="py-20 px-6 bg-gradient-to-b from-white to-green-50">
+    // Add tabIndex so this section can receive programmatic focus for accessibility
+    <section id="help" tabIndex={-1} className="py-20 px-6 bg-gradient-to-b from-white to-green-50">
       <div className="max-w-6xl mx-auto text-center">
         
         {/* Section Header */}
