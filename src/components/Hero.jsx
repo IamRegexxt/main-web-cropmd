@@ -25,9 +25,14 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button className="bg-primary text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all flex items-center gap-2">
+            <a
+              href="/cropMD.apk"
+              download="cropMD.apk"
+              aria-label="Download CropMD APK"
+              className="bg-primary text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all flex items-center gap-2"
+            >
               Download App <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
             <button className="border border-primary text-primary px-6 py-3 rounded-xl shadow-lg hover:bg-primary hover:text-white transition-all">
               Learn More
             </button>

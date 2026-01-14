@@ -20,10 +20,15 @@ export default function Navbar() {
           <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
         </div>
 
-        {/* Download Button */}
-        <button className="bg-primary text-white px-5 py-2.5 rounded-xl font-semibold shadow-md hover:bg-primary/90 transition-all">
+        {/* Download Link (direct APK download) */}
+        <a
+          href="/cropMD.apk"
+          download="cropMD.apk"
+          className="bg-primary text-white px-5 py-2.5 rounded-xl font-semibold shadow-md hover:bg-primary/90 transition-all"
+          aria-label="Download CropMD APK"
+        >
           Download
-        </button>
+        </a>
       </div>
     </nav>
   );
