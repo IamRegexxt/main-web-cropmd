@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background: whitesmoke;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4AA69;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Utility container for consistent spacing */
+.container-custom {
+  @apply max-w-7xl mx-auto px-6 lg:px-12;
+}
+
+/* Links */
+a {
+  @apply transition-colors duration-200;
+}
+a:hover {
+  @apply text-primary;
+}
