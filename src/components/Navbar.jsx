@@ -16,8 +16,10 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-8 text-gray-700 font-medium">
           <a href="#help" className="hover:text-primary transition-colors">How It Works</a>
           <a href="#features" className="hover:text-primary transition-colors">Features</a>
+          <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#library" className="hover:text-primary transition-colors">Disease Library</a>
           <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
+          <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </div>
 
         {/* Download Link (direct APK download) */}
